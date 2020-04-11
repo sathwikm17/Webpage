@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Form page Login</title>
+    <link rel="icon" href="dp.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <form  action="Advanced.html" onsubmit= " return changecss()">
+      <input  id="user" type="text"
+       placeholder="Enter username"><br><br>
+      <input  id="pass"  type="password" placeholder="Enter password"><br>
+      <br>
+      <button type="submit">SUBMIT</button>
+
+    </form>
+
+  </body>
+</html>
+<script type="text/javascript">
+  function changecss(){
+    var uname=document.getElementById("user");
+    var vpass=document.getElementById("pass");
+    if(uname.value.trim()=="" || vpass.value.trim()==""){
+      alert("Null values not allowed");
+      return false;
+    }
+    else {
+      true;
+    }
+  }
+</script>
